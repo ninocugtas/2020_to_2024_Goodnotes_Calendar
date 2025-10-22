@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh repo create:*)",
+      "Bash(winget install:*)",
+      "Bash(where gh:*)",
+      "Bash(\"C:\\Program Files\\GitHub CLI\\gh.exe\" --version)",
+      "Bash(\"C:\\Program Files\\GitHub CLI\\gh.exe\" auth status)",
+      "Bash(\"C:\\Program Files\\GitHub CLI\\gh.exe\" auth login)",
+      "Bash(\"C:\\Program Files\\GitHub CLI\\gh.exe\" repo create 2020_to_2024_Goodnotes_Calendar --source=. --public --push)",
+      "Read(//c/Users/ninoc/OneDrive/Pictures/Screenshots 1/**)",
+      "Bash(pip install:*)",
+      "Bash(python generate_calendar.py:*)",
+      "WebFetch(domain:encrypted-tbn0.gstatic.com)",
+      "Bash(git push)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nAdd complete calendar project files\n\n- generate_calendar.py: Python script to generate interactive PDF calendar\n- requirements.txt: Project dependencies (ReportLab)\n- goodnotes_calendar_2020_2024.pdf: Final 61-page calendar PDF\n  - 1 elegant cover page with gold accents\n  - 60 monthly pages with clickable navigation tabs\n  - Dark mode design optimized for iPad/Goodnotes\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git commit:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

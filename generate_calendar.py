@@ -309,8 +309,10 @@ def draw_calendar_grid(c, year, month):
     grid_bottom = notes_top  # Calendar ends where notes begin
     row_height = (grid_top - grid_bottom) / 6  # 6 rows for weeks
 
-    # Get calendar data
-    cal = calendar.monthcalendar(year, month)
+    # Get calendar data - set first day of week to Sunday (6)
+    # Python's calendar module uses Monday (0) as default, but we display Sunday first
+    cal_obj = calendar.Calendar(firstweekday=calendar.SUNDAY)
+    cal = cal_obj.monthdayscalendar(year, month)
 
     # Draw grid and dates
     c.setStrokeColor(GRID_COLOR)
