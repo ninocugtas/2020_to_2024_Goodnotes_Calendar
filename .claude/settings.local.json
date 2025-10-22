@@ -15,7 +15,8 @@
       "Bash(git push)",
       "Bash(git add:*)",
       "Bash(git commit -m \"$(cat <<''EOF''\nAdd complete calendar project files\n\n- generate_calendar.py: Python script to generate interactive PDF calendar\n- requirements.txt: Project dependencies (ReportLab)\n- goodnotes_calendar_2020_2024.pdf: Final 61-page calendar PDF\n  - 1 elegant cover page with gold accents\n  - 60 monthly pages with clickable navigation tabs\n  - Dark mode design optimized for iPad/Goodnotes\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(cat:*)"
     ],
     "deny": [],
     "ask": []
